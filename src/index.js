@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+
 const blogPost ={
   title:'my first blogpost',
+  body:'here is paragraph first',
   published:true
 }
 let isPublished='';
@@ -16,7 +19,11 @@ if(blogPost.published){
 
 
 
-const element = <h1 className={isPublished}>{blogPost.title}</h1>
+const element = (
+  <div>
+<h1 className={isPublished}>{blogPost.title}</h1>
+<p>{blogPost.body}</p>
+</div>)
 
 ReactDOM.render(
   element,
