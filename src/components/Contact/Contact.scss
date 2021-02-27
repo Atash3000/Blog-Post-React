@@ -1,0 +1,56 @@
+
+$facebook:#1877f2;
+$instagram:#f46f30;
+$github:#333;
+
+.section-contact{
+background-color: #c7f9cc;
+height:87vh;
+}
+
+.media-container{
+border:2px solid white;
+position: absolute;
+width:100vw;
+top:30%;
+}
+
+.media-container{
+  display:flex;
+  justify-content: center;
+  & div{
+    margin-left: 2rem;
+  }
+  & div:first-child{ 
+    margin-left: 0;
+  }
+
+}
+
+
+.social{
+  font-size:6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  
+  &.facebook{
+  color:$facebook;
+  }
+  &.instagram{
+    color:$instagram;
+  }
+  &.github{
+    color:$github;
+  }
+  &:hover{
+    transform:translateY(-2px);
+    transform: scale(1.3);
+  }
+  &:active{
+    transform:translateY(2px);
+  }
+}
+
+
+
+

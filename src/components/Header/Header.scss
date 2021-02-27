@@ -1,0 +1,51 @@
+*::after,
+*::before,
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+}
+
+nav{
+height:13vh;
+background-color:rgb(71, 79, 82);
+}
+
+.main-menu{
+  width:85%;
+  margin-left: 7.5%;
+  list-style: none;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+}
+
+.main-menu {
+  li{
+    margin-left: 1.6rem;
+  }
+}
+
+.link{
+  &:link,
+  &:visited {
+    color:#fff;
+    text-decoration:none;
+    font-size: 1.8rem;
+    border-bottom:2px solid transparent;
+    padding-bottom: 5px;
+    transition: all 0.2s;
+  }
+  &:hover,
+  &:active{
+    border-bottom:2px solid #fff;
+  }
+}
+
+
